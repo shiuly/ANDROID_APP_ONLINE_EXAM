@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".ResultFrag" >
+
+
+    <ListView
+        android:id="@+id/resultmenu"
+        android:layout_width="match_parent"
+        android:layout_height="558dp"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        />
+</FrameLayout>

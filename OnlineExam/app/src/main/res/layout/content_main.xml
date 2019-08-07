@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+        <ScrollView android:layout_marginTop="30dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+            // 1
+                <ImageView
+                    android:id="@+id/simpleImageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="350dp"
+                    android:src="@drawable/exam" />
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ONLINE EXAM"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:typeface="sans" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/holo_red_light"
+                    android:onClick="loginClick"
+                    android:text="ENROLL NOW"
+                    android:textColor="@android:color/white" />
+                // 2
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="EXAM CATAGORY"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:typeface="sans" />
+                <ImageView
+                    android:id="@+id/simpleImageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/java" />
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="JAVA"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/black"
+                    android:typeface="sans" />
+                // 3
+                <ImageView
+                    android:id="@+id/simpleImageView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sql" />
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="SQL"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/black"
+                    android:typeface="sans" />
+                // 4
+                <ImageView
+                    android:id="@+id/simpleImageView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/html" />
+                <TextView
+                    android:id="@+id/textview5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="HTML"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/black"
+                    android:typeface="sans" />
+                // 5
+                <ImageView
+                    android:id="@+id/simpleImageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/css" />
+                <TextView
+                    android:id="@+id/textview6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CSS"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/black"
+                    android:typeface="sans" />
+                // 6
+                <ImageView
+                    android:id="@+id/simpleImageView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/file" />
+                <TextView
+                    android:id="@+id/textview7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="PHP"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/black"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

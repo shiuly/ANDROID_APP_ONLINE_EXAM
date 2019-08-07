@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".AboutFrag">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:gravity="center"
+                    android:text="ABOUT US"
+                    android:textColor="@android:color/black"
+                    android:textSize="45dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:textFontWeight="@android:integer/config_mediumAnimTime"
+                    android:textSize="18dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="This is the last online examination system you will ever need! With our easy online test maker you will set up your own engaging exams that fit any kind of difficulty level. Build and create your online exams  tests with great ease and provide your users with appropriate feedback, so they will have a rich learning experience." />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/exam" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

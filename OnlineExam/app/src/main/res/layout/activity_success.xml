@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    tools:context=".MainActivity">
+<GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:id="@+id/textDummy"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+
+        android:text="Question Remain"
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/qRemain"
+        android:layout_width="161dp"
+        android:layout_height="match_parent"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="30dp" />
+
+
+</GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/resultMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="@android:color/white"
+            android:textSize="100dp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textQ"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Question"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textQ">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option one"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option two"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option three"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="221dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="280dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="SUBMIT"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>
